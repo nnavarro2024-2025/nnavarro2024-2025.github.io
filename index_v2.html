@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <style>
+    
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  background-image: url(assets/mojave-day.jpg); /* Use the correct path for your images */
+  background-attachment: fixed; /* Background stays in place when scrolling */
+  animation: fadeBackground 10s ease-in-out;
+  animation-fill-mode: forwards;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Background Transition Animation */
+@keyframes fadeBackground {
+  from { background-image: url(assets/mojave-day.jpg); }
+  to { background-image: url(assets/mojave-night.jpg); }
+}
+
+h3 {
+  color: #ffa804;
+}
+
+p, h2 {
+  color: white;
+  text-align: center;
+}
+
+
+
+/* DESKTOP NAV */
+
+nav, .navlinks {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.navlinks {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffa804;
+}
+
+
+#nav {
+  display: none;
+}
+
+
+
+section {
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  position: relative;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.Profile_pic {
+  display: flex;
+  height: 350px;
+  width: 380px;
+  margin: auto 0;
+}
+
+.sectiontext {
+  align-self: center;
+  text-align: center;
+}
+
+
+.sectiontext1 {
+  text-align: center;
+}
+
+
+
+.Text2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffa804;
+}
+
+#socialsContactcs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+
+
+
+/* CONTACT SECTION */
+
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+    margin-bottom: 13rem;
+}
+
+
+.contactinfoupper {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+/* SECTION CONTAINER */
+.textaboutme {
+  color: black;
+  margin: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.sectioncontainer{
+
+border-radius: 2rem;
+
+background: rgb(250, 250, 250);
+margin: 2rem auto;
+padding: 0.5rem;
+}
+
+
+
+
+  </style>
+  <body>
+    <nav>
+      <div class="logo">Nikko</div>
+      <div>
+        <ul class="navlinks">
+          <li><a href="#about">About</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="Profile_pic">
+        <img src="./assets/profile-pic3.png" alt="Nikko profile picture" />
+      </div>
+      <div class="sectiontext">
+        <p class="text1">Hello, I'm</p>
+        <h1 class="Text2">Nikko</h1>
+
+        
+        <div id="socialsContactcs">
+          <img
+            src="./assets/fb1.png"
+            alt="facebook"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/navarro12311/'" />
+          <img
+            src="./assets/github1.png"
+            alt="Github"
+            class="icon"
+            onclick="location.href='https://github.com/nnavarro2024-2025/'" />
+            <img
+    src="./assets/email1.png"
+    alt="Email"
+    class="icon"
+    onclick="location.href='mailto:examplemail@gmail.com'"/>
+
+        </div>
+
+    </section>
+    
+    <section id="about">
+      <p class="sectiontext1">Get To Know More</p>
+      <h1 class="Text2">About Me</h1>
+      <div class="sectioncontainer">
+
+        
+          
+            <p class="textaboutme">
+              I'm Nikko Angelo P. Navarro, a student currently pursuing a Bachelor of Science in Information Technology (BSIT) from 2B. I have a passion for technology and enjoy exploring new innovations and solutions in the tech world.
+            </p>
+          </div>
+        
+      </div>
+    </section>
+
+
+
+    
+    
+  </body>
+</html>
