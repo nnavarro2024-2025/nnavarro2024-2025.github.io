@@ -1,0 +1,23 @@
+.img{
+    height: 150px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+#cook-time{
+    list-style: square;
+}
+
+.time{
+    color: gray
+}
+
+.external-link{
+    color: seagreen;
+}
+
+h1,h2,p,li{
+    font-family: Helvetica;
+}
