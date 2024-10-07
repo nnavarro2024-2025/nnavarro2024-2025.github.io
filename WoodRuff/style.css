@@ -1,0 +1,41 @@
+.header {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+    
+.about-me {
+    font-size: 20px;
+    opacity: 50%;
+}
+    
+.title {
+    font-weight: bold;
+}
+    
+h1 {
+    color: azure;
+}
+    
+body {
+    font-family: Georgia;
+    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+}
+
+/* Button Styles */
+.button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: black;
+    margin-top: 20px; /* Add some space above */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #fd4766; /* Change color on hover */
+}
