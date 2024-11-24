@@ -2,309 +2,276 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body,
-  html {
-    width: 100%;
-    height: 100vh;
-    scroll-behavior: smooth;
-    background-image: url(assets/mojave-day.jpg);
-    background-attachment: fixed;
-    animation: fadeBackground 10s ease-in-out;
-    animation-fill-mode: forwards;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-  }
-
-  /* Background Transition Animation */
-  @keyframes fadeBackground {
-    from {
-      background-image: url(assets/mojave-day.jpg);
-    }
-
-    to {
-      background-image: url(assets/mojave-night.jpg);
-    }
-  }
-
-  h3 {
-    color: #ffa804;
-  }
-
-  p,
-  h2 {
-    color: white;
-    text-align: center;
-  }
-
-
-
-  /* DESKTOP NAV */
-
-  nav,
-  .navlinks {
-    display: flex;
-  }
-
-  nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-  }
-
-  .navlinks {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    display: flex;
-  }
-
-  a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-decoration-color: white;
-  }
-
-  a:hover {
-    color: grey;
-  
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-  }
-
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffa804;
-  }
-
-
-  #nav {
-    display: none;
-  }
-
-
-
-  section {
-    padding-top: 4vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-    position: relative;
-  }
-
-  /* PROFILE SECTION */
-
-  #profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-  }
-
-  .Profile_pic {
-    display: flex;
-    height: 350px;
-    width: 380px;
-    margin: auto 0;
-  }
-
-  .sectiontext {
-    align-self: center;
-    text-align: center;
-  }
-
-
-  .sectiontext1 {
-    text-align: center;
-  }
-
-
-
-  .Text2 {
-    font-size: 3rem;
-    text-align: center;
-    color: #ffa804;
-  }
-
-  #socialsContactcs {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-
-  /* ICONS */
-
-
-  .icon {
-    cursor: pointer;
-    height: 2rem;
-  }
-
-
-
-
-  /* CONTACT SECTION */
-
-  #about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 25vh;
-    margin-bottom: 13rem;
-    margin-top: 13rem;
-  }
-
-
-  .contactinfoupper {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.5rem;
-  }
-
-  /* SECTION CONTAINER */
-  .textaboutme {
-    color: black;
-    margin: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-  }
-
-  .sectioncontainer {
-
-    border-radius: 2rem;
-
-    background: rgb(250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.5rem;
-  }
-
-
-  #actionButton {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-
-  .contactbutton {
-    padding: 11px 6px;
-    background-color: #ffa804;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-
-
-  }
-
-  .contactbutton:hover {
-    background-color: #e69500;
-
-
-  }
-
-  ul {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-  }
-</style>
 
 <body>
-  <nav>
-    <div class="logo">Nikko</div>
-    <div>
-      <ul class="navlinks">
-        <li><a href="#about">About me</a></li>
-
-      </ul>
-    </div>
-  </nav>
-
-  <section id="profile">
-    <div class="Profile_pic">
-      <img src="./assets/profile-pic3.png" alt="Nikko profile picture" />
-    </div>
-    <div class="sectiontext">
-      <p class="text1">Hello, I'm</p>
-      <h1 class="Text2">Nikko</h1>
 
 
-      <div id="socialsContactcs">
-        <img src="./assets/fb1.png" alt="facebook" class="icon"
-          onclick="location.href='https://www.facebook.com/navarro12311/'" />
-        <img src="./assets/github1.png" alt="Github" class="icon"
-          onclick="location.href='https://github.com/nnavarro2024-2025/'" />
-        <img src="./assets/email1.png" alt="Email" class="icon"
-          onclick="location.href='mailto:examplemail@gmail.com'" />
-      </div>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about-section">About Me</a></li>
+            <li><a href="#Captured-moments">Captured Moments</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <button id="darkModeToggle">🌙</button>
+        </ul>
+    </nav>
 
-      <div id="actionButton">
-        <a href="FashionBlog.html" class="contactbutton">Visit Fashion Blog</a>
-        <a href="HealthyRecipes/index.html" class="contactbutton">Healthy Recipes</a>
-        <a href="WoodRuff/index.html" class="contactbutton">WoodRuff Portfolio</a>
-      </div>
+    <section id="Home">
+        <div class="container">
+            <div class="text-content">
+                <h1>
+                    <span class="hello">Hello</span>,
+                    <span class="welcome">Welcome</span>
+                </h1>
+                <p>I'm Nikko</p>
+
+                <div id="socialsContactcs">
+                    <img src="./images/icons/fb_black.png" alt="facebook" class="icon" id="facebook-icon"
+                        onclick="location.href='https://www.facebook.com/navarro12311/'" />
+                    <img src="./images/icons/github_black.png" alt="Github" class="icon" id="github-icon"
+                        onclick="location.href='https://github.com/nnavarro2024-2025/'" />
+                    <img src="./images/icons/email_black.png" alt="Email" class="icon" id="email-icon"
+                        onclick="location.href='mailto:examplemail@gmail.com'" />
+                </div>
+
+            </div>
+
+            <div class="image-container rotate polaroid">
+                <img src="images/banner3.jpeg" alt="Nikko at the sea">
+            </div>
+
+    </section>
+    <section id="about-section">
+        <div class="about-section">
+            <div class="about-image polaroid">
+                <img src="images/IMG_2209.jpg" alt="Portrait">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <hr>
+                <p>
+                    Hi! I’m Nikko Angelo P. Navarro, second-year Bachelor of Science in Information Technology student
+                    at the University of the Immaculate Conception. My passion for technology started in high school,
+                    and it’s what inspired me to pursue IT.
+                </p>
+                <p>
+                    Things that I love to do:
+                </p>
+                <ul>
+                    <li>Adventuring</li>
+                    <li>Listening to my playlist</li>
+                    <li>Sleeping </li>
+                    <li>Eating</li>
+                    <li>Watching videos and movies online</li>
+                    <li>Playing PC games</li>
+                </ul>
+
+                <div id="actionButton">
+                    <button class="contactbutton" onclick="location.href='FashionBlog.html'">Fashion Blog</button>
+                    <button class="contactbutton" onclick="location.href='HealthyRecipes/index.html'">Healthy
+                        Recipes</button>
+                    <button class="contactbutton" onclick="location.href='WoodRuff/index.html'">WoodRuff
+                        Portfolio</button>
+                    <button class="contactbutton" onclick="location.href='mediaqueryindex/mediaqueryindex.html'">Media
+                        Query Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Captured-moments">
+        <div class="Captured-moments-header">
+            <div class="section-header">
+                <h2 class="section-title">Captured Moments</h2>
+                <p class="Captured-moments-text">These are some pictures I've taken throughout my journey capturing
+                    beautiful, spontaneous moments, people who made my year unforgettable, and special memories that
+                    tell a unique story.</p>
+
+            </div>
 
 
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/2FE685B0-D651-4056-BC17-19BE96ED182B.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_2.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_3.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_4.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_5.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_6.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_7.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/image_8.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/FullSizeRender.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1620.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1640.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1661.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1652.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1813.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1794.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_1812.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_2811.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_3375.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_4210.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_4314.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_4433.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_4793.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_5809.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_6806.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_6995.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_7062.JPG" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_7105.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_7123.jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_8536(1).jpg" alt="Picture">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a>
+                        <img src="images/IMG_4447.jpg" alt="Picture">
+                    </a>
+                </div>
 
+            </div>
 
-
-  </section>
-
-  <section id="about">
-    <p class="sectiontext1">Get To Know More</p>
-    <h1 class="Text2">About Me</h1>
-    <div class="sectioncontainer">
-
-
-
-      <p class="textaboutme">
-        I'm Nikko Angelo P. Navarro, a student currently pursuing a Bachelor of Science in Information Technology (BSIT)
-        from 2B. I have a passion for technology and enjoy exploring new innovations and solutions in the tech world.
-      </p>
-    </div>
-    <h1 class="Text2">Favorites</h1>
-    <div class="sectioncontainer">
-
-      <p class="textaboutme"> Things that I love to do are:</p>
-      <ul>
-        <li>Adventuring</li>
-        <li>listening to my playlist</li>
-        <li>Sleeping</li>
-        <li>Eating</li>
-        <li>Watching Videos and movies Online</li>
-        <li>Playing PC Games</li>
-      </ul>
-    </div>
-
-
-
-    </div>
-
-    </div>
-  </section>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div class="contact-section">
+            <div class="contact-text">
+                <h2 class="contact-heading">Contact Me</h2>
+                <p>I would love to get suggestions from you.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send It</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="images/icons/uic-logo-white.png" alt="UIC logo" class="UIC-logo">
+                <img src="images/icons/CCS Seal.png" alt="CCS logo" class="CCS-logo">
+            </div>
+        </div>
+    </section>
+    <script src="./Dark-mode.js"></script>
 
 
 
