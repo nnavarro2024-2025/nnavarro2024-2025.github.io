@@ -402,7 +402,8 @@ body.dark-mode .text-content h1 .hello,
 body.dark-mode .text-content h1 .welcome,
 body.dark-mode .about-content p,
 body.dark-mode .about-content li,
-body.dark-mode .section-header  p {
+body.dark-mode .section-header p,
+body.dark-mode #memeContainer p{
     color: #ffffff; 
 }
 
@@ -454,4 +455,41 @@ body.dark-mode button:hover {
 
 #darkModeToggle:hover {
     opacity: 0.7;
+}
+#random-meme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px; /* Optional: Limit the width for a cleaner look */
+}
+
+#fetchMemeButton {
+    margin-top: 20px;
+}
+
+#memeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#memeContainer img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#memeContainer p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
 }
